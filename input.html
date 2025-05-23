@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mano > input
+        {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://172.16.60.224/mural_recados/" method="post" style="display: flex; align-items: center; flex-direction: column; gap: 15px;">
+        <label for="">eita nois hein......</label>
+        <input type="text" name="autor" value="espectreas">
+        <div class="mano" style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+
+            <div style="background-color: red; padding: 10px; border-radius: 5px;">
+                <input type="radio" name="campo_cor"> Vermelho
+            </div>
+            <div style="background-color: green; padding: 10px; border-radius: 5px;">
+                <input type="radio" name="campo_cor"> Verde
+            </div>
+            <div style="background-color: blue; padding: 10px; border-radius: 5px;">
+                <input type="radio" name="campo_cor"> Azul
+            </div>
+
+        </div>
+
+        <div class="mano" style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+            <div style="background-color: #f4f4f4; padding: 10px; border-radius: 5px;"><input type="checkbox" name="check_cor"> Hue
+            </div>
+            <div style="background-color: #f4f4f4; padding: 10px; border-radius: 5px;"><input type="checkbox" name="check_cor"> Saturation
+            </div>
+            <div style="background-color: #f4f4f4; padding: 10px; border-radius: 5px;"><input type="checkbox" name="check_cor"> Brightness
+            </div>
+        </div>
+
+        <div class="mano" style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+            <select name="campo_funcao" required>
+                <option style="color: grey" value="" selected disabled>Escolha a função da cor</option>
+                <option value="Título">Título</option>
+                <option value="Subtítulo">Subtítulo</option>
+                <option value="Botão">Botão</option>
+            </select>
+        </div>
+
+        <textarea rows="4" cols="30" name="mensagem"></textarea>
+        <input type="submit" value="enviar">
+        
+    </form>
+</body>
+
+</html>
