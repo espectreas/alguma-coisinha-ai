@@ -1,0 +1,100 @@
+<!-- oi, eu já devo ter upado esse arquivo no github, vc pode apagar ele já -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputar (verbo)</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #3b3b3b;
+            background: linear-gradient(0deg, rgb(77, 77, 77) 0%, rgb(24, 24, 24) 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container>h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .oi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px
+        }
+
+        .oioi {
+            margin-top: 20px;
+            width: 30%;
+            height: 30px;
+            align-self: center;
+            background-color: transparent;
+            border: 2px solid rgb(205, 255, 203);
+            color: rgb(205, 255, 203);
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: 300;
+        }
+
+        .oioi:hover {
+            background-color: rgb(205, 255, 203);
+            border: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .text {
+            padding: 10px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .cor {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            border-radius: 5px;
+        }
+
+        .nota {
+            width: 150px;
+            height: 90px;
+            font-size: 90px;
+            text-align: center;
+            background-color: rgb(224, 224, 224);
+            padding: 10px;
+            padding-left: 30px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bem vindo ao Color Review!</h1>
+
+        <form class="oi" action="#" method="get">
+            <input placeholder="Nome da cor..." class="text" type="text" min="0" max="2" name="campo_nome">
+            <input class="cor" type="color" name="campo_cor">
+            <input class="nota" type="number" max="10" name="campo_nota" step="0.1">
+            <input class="oioi" type="submit" value="Enviar dados.">
+        </form>
+    </div>
+</body>
+
+</html>
